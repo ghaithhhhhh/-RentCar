@@ -1,0 +1,71 @@
+<div class="container">
+
+  <h1 class="text-center">ajouter une nouvelle voiture</h1>
+<form>
+    <div class="mb-3">
+      <label  class="form-label">model</label>
+      <input type="text" class="form-control" id="model" name="model" [(ngModel)]="car.model" >
+    </div>
+  
+    <div class="mb-3">
+        <label  class="form-label">categorie</label>
+        <input type="text" class="form-control" id="categorie" name="categorie" [(ngModel)]="car.categorie" >
+      </div>
+       
+      <div class="mb-3">
+        <label  class="form-label">boite de vitesse</label>
+        <input type="text" class="form-control" id="boite_vitess" name="boite_vitess" [(ngModel)]="car.boite_vitess" >
+      </div>
+
+
+      <div class="mb-3">
+        <label  class="form-label">climatisation</label>
+        <input type="text" class="form-control" id="climatisation" name="climatisation" [(ngModel)]="car.climatisation" >
+      </div>
+
+
+
+      <div class="mb-3">
+        <label class="form-label">connectivite</label>
+        <input type="text" class="form-control" id="connectivite" name="connectivite" [(ngModel)]="car.connectivite" >
+      </div>
+
+
+      <div class="mb-3">
+        <label  class="form-label">energie</label>
+        <input type="text" class="form-control" id="energie" name="energie" [(ngModel)]="car.energie" >
+      </div>
+
+
+      <div class="mb-3">
+        <label  class="form-label">image</label>
+        <input #fileInput type="file" class="form-control" id="image" name="image" (change)="selectImage($event)" >
+      </div>
+
+
+      <div class="mb-3">
+        <label  class="form-label">nombre des places</label>
+        <input type="text" class="form-control" id="car.n_place" name="car.n_place" [(ngModel)]="car.n_place" >
+      </div>
+
+
+      <div class="mb-3">
+        <label  class="form-label">nombre des portes</label>
+        <input type="text" class="form-control" id="nombre_porte" name="nombre_porte" [(ngModel)]="car.nombre_porte" >
+      </div>
+     
+
+      <div class="mb-3">
+        <label  class="form-label">prix d'un jour</label>
+        <input type="text" class="form-control" id="nombre_porte" name="nombre_porte" [(ngModel)]="car.dayPrice" >
+      </div>
+  
+
+
+
+
+      
+    
+    </form> 
+    <button class="btn btn-center btn-primary mt-2" (click)="addAcar()">ajouter</button>
+  </div>

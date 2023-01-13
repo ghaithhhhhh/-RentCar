@@ -1,0 +1,16 @@
+.boxCar{
+    height: 150vh;
+    width: 100%;
+
+}
+.Cardes{
+position: relative;
+top: -500px;
+right: -1200px;
+
+
+}
+.imgCar img{
+    width: 1000px;
+    height: 80vh;
+}

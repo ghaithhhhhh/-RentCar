@@ -1,0 +1,40 @@
+
+<div class="carBox">
+<div>  
+  <div class="imgCar">
+  <img [src]="'http://127.0.0.1:5000/getImage/' + car.image" class="card-img-top" alt="...">
+  </div>
+  <div class="Cardes">
+     <h1 style="color: rgb(21, 21, 229);">{{car.model}}</h1>
+     <div style="display: flex;">
+         <h2>Prix de jour:</h2> 
+         <h3>{{car.DayPrice}}</h3>
+     </div>
+     <div>
+         <h4>Climatisation: {{car.climatisation}}</h4>
+     </div>
+     <div>
+        <h4>Boite vitesse: {{car.boite_vitess}}</h4>
+     </div>
+     <div>
+         <h4>Nombre de places: {{car.n_place}}</h4>
+     </div>
+     <div>
+         <h4>Nombre de portes: {{car.nombre_porte}}</h4>
+     </div>
+     <div>
+         <h4>Connectivite: {{car.connectivite}}</h4>
+     </div>
+     <div>
+         <h4>Energie: {{car.energie}}</h4>
+     </div>
+     <div>
+         <h4>Categorie: {{car.categorie}}</h4>
+     </div>
+       <button class="btn btn-primary" (click)="reserve()" >réserver</button>
+    </div>
+</div>
+</div>
+
+        
+        

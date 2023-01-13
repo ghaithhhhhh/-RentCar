@@ -1,0 +1,36 @@
+.pos_box{
+    display: flex;
+    justify-content: flex-end;
+}
+.list-group{
+    width: 500px;
+    height: auto;
+
+}
+
+.box{
+    height: 350vh;
+    width: 80%;
+    background-color: aqua;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: auto 400px;
+	grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    padding: 10px 120px ;
+    
+}
+.size{
+    height: 200px;
+    width: 400px;
+}
+.item{
+    display:flex;
+    justify-content: space-around;
+}
+
+
+.des{
+    display: flex;
+    flex-direction: column;
+}
